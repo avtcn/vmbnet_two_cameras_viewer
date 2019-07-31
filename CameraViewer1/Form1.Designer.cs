@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.m_PictureBox = new System.Windows.Forms.PictureBox();
             this.panel_Left = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -55,13 +54,13 @@
             this.bT_Acqure2 = new System.Windows.Forms.Button();
             this.bT_OpenCamera2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.m_PictureBox)).BeginInit();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.m_PictureBox = new System.Windows.Forms.PictureBox();
             this.panel_Left.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -72,29 +71,13 @@
             this.p_SetCam2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_PictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // m_PictureBox
-            // 
-            this.m_PictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.m_PictureBox.BackColor = System.Drawing.Color.White;
-            this.m_PictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("m_PictureBox.BackgroundImage")));
-            this.m_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.m_PictureBox.Location = new System.Drawing.Point(27, 68);
-            this.m_PictureBox.Margin = new System.Windows.Forms.Padding(0);
-            this.m_PictureBox.Name = "m_PictureBox";
-            this.m_PictureBox.Size = new System.Drawing.Size(547, 344);
-            this.m_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.m_PictureBox.TabIndex = 3;
-            this.m_PictureBox.TabStop = false;
-            this.m_PictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.m_PictureBox_Paint);
             // 
             // panel_Left
             // 
@@ -141,11 +124,11 @@
             // labelFPSCam1
             // 
             this.labelFPSCam1.AutoSize = true;
-            this.labelFPSCam1.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFPSCam1.Font = new System.Drawing.Font("Consolas", 26.25F);
             this.labelFPSCam1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.labelFPSCam1.Location = new System.Drawing.Point(403, 56);
+            this.labelFPSCam1.Location = new System.Drawing.Point(413, 56);
             this.labelFPSCam1.Name = "labelFPSCam1";
-            this.labelFPSCam1.Size = new System.Drawing.Size(111, 34);
+            this.labelFPSCam1.Size = new System.Drawing.Size(132, 41);
             this.labelFPSCam1.TabIndex = 28;
             this.labelFPSCam1.Text = "66.666";
             this.labelFPSCam1.Click += new System.EventHandler(this.label5_Click);
@@ -154,7 +137,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(405, 23);
+            this.label6.Location = new System.Drawing.Point(415, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 26);
             this.label6.TabIndex = 27;
@@ -164,11 +147,11 @@
             // labelFramesCam1
             // 
             this.labelFramesCam1.AutoSize = true;
-            this.labelFramesCam1.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFramesCam1.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFramesCam1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.labelFramesCam1.Location = new System.Drawing.Point(202, 56);
             this.labelFramesCam1.Name = "labelFramesCam1";
-            this.labelFramesCam1.Size = new System.Drawing.Size(175, 34);
+            this.labelFramesCam1.Size = new System.Drawing.Size(208, 41);
             this.labelFramesCam1.TabIndex = 26;
             this.labelFramesCam1.Text = "0123456789";
             this.labelFramesCam1.Click += new System.EventHandler(this.label4_Click);
@@ -265,11 +248,11 @@
             // labelFPSCam2
             // 
             this.labelFPSCam2.AutoSize = true;
-            this.labelFPSCam2.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFPSCam2.Font = new System.Drawing.Font("Consolas", 26.25F);
             this.labelFPSCam2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.labelFPSCam2.Location = new System.Drawing.Point(403, 56);
+            this.labelFPSCam2.Location = new System.Drawing.Point(412, 56);
             this.labelFPSCam2.Name = "labelFPSCam2";
-            this.labelFPSCam2.Size = new System.Drawing.Size(111, 34);
+            this.labelFPSCam2.Size = new System.Drawing.Size(132, 41);
             this.labelFPSCam2.TabIndex = 32;
             this.labelFPSCam2.Text = "66.666";
             // 
@@ -277,7 +260,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(404, 23);
+            this.label8.Location = new System.Drawing.Point(413, 23);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 26);
             this.label8.TabIndex = 31;
@@ -286,11 +269,11 @@
             // labelFramesCam2
             // 
             this.labelFramesCam2.AutoSize = true;
-            this.labelFramesCam2.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFramesCam2.Font = new System.Drawing.Font("Consolas", 26.25F);
             this.labelFramesCam2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.labelFramesCam2.Location = new System.Drawing.Point(202, 56);
             this.labelFramesCam2.Name = "labelFramesCam2";
-            this.labelFramesCam2.Size = new System.Drawing.Size(175, 34);
+            this.labelFramesCam2.Size = new System.Drawing.Size(208, 41);
             this.labelFramesCam2.TabIndex = 30;
             this.labelFramesCam2.Text = "0123456789";
             // 
@@ -366,11 +349,38 @@
             this.panel2.Size = new System.Drawing.Size(565, 419);
             this.panel2.TabIndex = 28;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.m_PictureBox);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(586, 419);
+            this.panel1.TabIndex = 27;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 5000;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Crimson;
+            this.pictureBox2.Image = global::CameraViewer1.Properties.Resources.av1800usb_top;
+            this.pictureBox2.Location = new System.Drawing.Point(4, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1166, 72);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Image = global::CameraViewer1.Properties.Resources.makoU503b;
             this.pictureBox4.Location = new System.Drawing.Point(12, 3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(531, 63);
@@ -395,20 +405,11 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.m_PictureBox);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(586, 419);
-            this.panel1.TabIndex = 27;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::CameraViewer1.Properties.Resources.av1800u500c;
             this.pictureBox3.Location = new System.Drawing.Point(27, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(547, 63);
@@ -416,23 +417,22 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
-            // timer1
+            // m_PictureBox
             // 
-            this.timer1.Interval = 5000;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.m_PictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Crimson;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1166, 72);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.m_PictureBox.BackColor = System.Drawing.Color.White;
+            this.m_PictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("m_PictureBox.BackgroundImage")));
+            this.m_PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.m_PictureBox.Location = new System.Drawing.Point(27, 68);
+            this.m_PictureBox.Margin = new System.Windows.Forms.Padding(0);
+            this.m_PictureBox.Name = "m_PictureBox";
+            this.m_PictureBox.Size = new System.Drawing.Size(547, 344);
+            this.m_PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.m_PictureBox.TabIndex = 3;
+            this.m_PictureBox.TabStop = false;
+            this.m_PictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.m_PictureBox_Paint);
             // 
             // Form1
             // 
@@ -448,7 +448,6 @@
             this.Text = "VimbaSDK_DemoCode";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.m_PictureBox)).EndInit();
             this.panel_Left.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -463,11 +462,12 @@
             this.p_SetCam2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m_PictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

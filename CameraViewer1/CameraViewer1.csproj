@@ -104,6 +104,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
+    <None Include="Resources\makoU503b.png" />
+    <None Include="Resources\av1800u500c.png" />
+    <None Include="Resources\av1800usb-top.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

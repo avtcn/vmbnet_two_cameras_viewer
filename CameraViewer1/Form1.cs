@@ -33,7 +33,7 @@ namespace CameraViewer1
         private int m_Frames_Cam2 = 0; 
         private double m_FPS_Cam1 = 0;
         private double m_FPS_Cam2 = 0;
-        private static int sizeQueue = 60;
+        private static int sizeQueue = 100;
         private Queue<long> m_QueueCam1 = new Queue<long>(sizeQueue + 1);
         private Queue<long> m_QueueCam2 = new Queue<long>(sizeQueue + 1);
 
