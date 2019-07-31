@@ -123,11 +123,13 @@ namespace CameraViewer1
             {
                 bool IsOpen= Camera1.OpenCamera();
                 if (IsOpen)
-                {                                               
-                   Cam1_ExpTime = Camera1.ReadExposureTime();
-                   trackBar1.Value = (int)Cam1_ExpTime;
-                  // Camera1.Set_TriggerSource(1);                                                 
-                }               
+                {
+                    Cam1_ExpTime = Camera1.ReadExposureTime();
+                    trackBar1.Value = (int)Cam1_ExpTime;
+                    labelExposure1.Text = String.Format("{0:N3} ms", Cam1_ExpTime / 1000);
+
+                    // Camera1.Set_TriggerSource(1);                                                 
+                }
             }
             else
             {
@@ -143,11 +145,12 @@ namespace CameraViewer1
                 
                 bool IsOpen = Camera2.OpenCamera();
                 if (IsOpen)
-                {                                               
+                {
                     Cam2_ExpTime = Camera2.ReadExposureTime();
                     trackBar2.Value = (int)Cam2_ExpTime;
-                   // Camera2.Set_TriggerSource(1);                   
-                }               
+                    labelExposure2.Text = String.Format("{0:N3} ms", Cam2_ExpTime / 1000);
+                    // Camera2.Set_TriggerSource(1);                   
+                }
             }
             else
             {
@@ -309,15 +312,17 @@ namespace CameraViewer1
         {
             Cam1_ExpTime = trackBar1.Value;
             Camera1.Set_ExposureTime(Cam1_ExpTime);
+            labelExposure1.Text = String.Format("{0:N3} ms", Cam1_ExpTime / 1000);
         }
 
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
             Cam2_ExpTime = trackBar2.Value;
             Camera2.Set_ExposureTime(Cam2_ExpTime);
+            labelExposure2.Text = String.Format("{0:N3} ms", Cam2_ExpTime / 1000);
         }
 
-        
+
         private void panel_Left_Resize(object sender, EventArgs e)//窗口调整
         {
             int pW = panel_Left.Width;

@@ -61,6 +61,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.m_PictureBox = new System.Windows.Forms.PictureBox();
+            this.labelExposure1 = new System.Windows.Forms.Label();
+            this.labelExposure2 = new System.Windows.Forms.Label();
             this.panel_Left.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -170,6 +172,7 @@
             // 
             this.p_SetCam1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.p_SetCam1.Controls.Add(this.labelExposure1);
             this.p_SetCam1.Controls.Add(this.label1);
             this.p_SetCam1.Controls.Add(this.trackBar1);
             this.p_SetCam1.Controls.Add(this.bT_Acqure);
@@ -189,11 +192,13 @@
             // 
             // trackBar1
             // 
+            this.trackBar1.LargeChange = 10000;
             this.trackBar1.Location = new System.Drawing.Point(61, 28);
             this.trackBar1.Maximum = 800000;
             this.trackBar1.Minimum = 71;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(118, 45);
+            this.trackBar1.SmallChange = 1000;
             this.trackBar1.TabIndex = 25;
             this.trackBar1.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar1.Value = 100;
@@ -291,6 +296,7 @@
             // 
             this.p_SetCam2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.p_SetCam2.Controls.Add(this.labelExposure2);
             this.p_SetCam2.Controls.Add(this.label2);
             this.p_SetCam2.Controls.Add(this.trackBar2);
             this.p_SetCam2.Controls.Add(this.bT_Acqure2);
@@ -310,11 +316,13 @@
             // 
             // trackBar2
             // 
+            this.trackBar2.LargeChange = 10000;
             this.trackBar2.Location = new System.Drawing.Point(62, 26);
             this.trackBar2.Maximum = 800000;
             this.trackBar2.Minimum = 71;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(118, 45);
+            this.trackBar2.SmallChange = 1000;
             this.trackBar2.TabIndex = 25;
             this.trackBar2.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trackBar2.Value = 100;
@@ -434,6 +442,24 @@
             this.m_PictureBox.TabStop = false;
             this.m_PictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.m_PictureBox_Paint);
             // 
+            // labelExposure1
+            // 
+            this.labelExposure1.AutoSize = true;
+            this.labelExposure1.Location = new System.Drawing.Point(70, 55);
+            this.labelExposure1.Name = "labelExposure1";
+            this.labelExposure1.Size = new System.Drawing.Size(53, 12);
+            this.labelExposure1.TabIndex = 26;
+            this.labelExposure1.Text = "15.000ms";
+            // 
+            // labelExposure2
+            // 
+            this.labelExposure2.AutoSize = true;
+            this.labelExposure2.Location = new System.Drawing.Point(71, 55);
+            this.labelExposure2.Name = "labelExposure2";
+            this.labelExposure2.Size = new System.Drawing.Size(29, 12);
+            this.labelExposure2.TabIndex = 26;
+            this.labelExposure2.Text = "15ms";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -505,6 +531,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.Button bT_Acqure;
+        private System.Windows.Forms.Label labelExposure1;
+        private System.Windows.Forms.Label labelExposure2;
     }
 }
 
