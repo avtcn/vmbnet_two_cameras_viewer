@@ -126,11 +126,11 @@
             // labelFPSCam1
             // 
             this.labelFPSCam1.AutoSize = true;
-            this.labelFPSCam1.Font = new System.Drawing.Font("Consolas", 32F);
+            this.labelFPSCam1.Font = new System.Drawing.Font("Consolas", 40F);
             this.labelFPSCam1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.labelFPSCam1.Location = new System.Drawing.Point(415, 46);
+            this.labelFPSCam1.Location = new System.Drawing.Point(474, 48);
             this.labelFPSCam1.Name = "labelFPSCam1";
-            this.labelFPSCam1.Size = new System.Drawing.Size(166, 51);
+            this.labelFPSCam1.Size = new System.Drawing.Size(208, 64);
             this.labelFPSCam1.TabIndex = 28;
             this.labelFPSCam1.Text = "66.666";
             this.labelFPSCam1.Click += new System.EventHandler(this.label5_Click);
@@ -139,7 +139,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(417, 13);
+            this.label6.Location = new System.Drawing.Point(476, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(50, 26);
             this.label6.TabIndex = 27;
@@ -149,11 +149,11 @@
             // labelFramesCam1
             // 
             this.labelFramesCam1.AutoSize = true;
-            this.labelFramesCam1.Font = new System.Drawing.Font("Consolas", 32F);
+            this.labelFramesCam1.Font = new System.Drawing.Font("Consolas", 40F);
             this.labelFramesCam1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelFramesCam1.Location = new System.Drawing.Point(202, 46);
+            this.labelFramesCam1.Location = new System.Drawing.Point(199, 48);
             this.labelFramesCam1.Name = "labelFramesCam1";
-            this.labelFramesCam1.Size = new System.Drawing.Size(190, 51);
+            this.labelFramesCam1.Size = new System.Drawing.Size(238, 64);
             this.labelFramesCam1.TabIndex = 26;
             this.labelFramesCam1.Text = "0123456";
             this.labelFramesCam1.Click += new System.EventHandler(this.label4_Click);
@@ -162,7 +162,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(204, 13);
+            this.label3.Location = new System.Drawing.Point(201, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 26);
             this.label3.TabIndex = 25;
@@ -262,11 +262,11 @@
             // labelFPSCam2
             // 
             this.labelFPSCam2.AutoSize = true;
-            this.labelFPSCam2.Font = new System.Drawing.Font("Consolas", 32F);
+            this.labelFPSCam2.Font = new System.Drawing.Font("Consolas", 40F);
             this.labelFPSCam2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.labelFPSCam2.Location = new System.Drawing.Point(405, 46);
+            this.labelFPSCam2.Location = new System.Drawing.Point(465, 48);
             this.labelFPSCam2.Name = "labelFPSCam2";
-            this.labelFPSCam2.Size = new System.Drawing.Size(166, 51);
+            this.labelFPSCam2.Size = new System.Drawing.Size(208, 64);
             this.labelFPSCam2.TabIndex = 32;
             this.labelFPSCam2.Text = "66.666";
             // 
@@ -274,7 +274,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(407, 13);
+            this.label8.Location = new System.Drawing.Point(467, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 26);
             this.label8.TabIndex = 31;
@@ -283,11 +283,11 @@
             // labelFramesCam2
             // 
             this.labelFramesCam2.AutoSize = true;
-            this.labelFramesCam2.Font = new System.Drawing.Font("Consolas", 32F);
+            this.labelFramesCam2.Font = new System.Drawing.Font("Consolas", 40F);
             this.labelFramesCam2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.labelFramesCam2.Location = new System.Drawing.Point(202, 46);
+            this.labelFramesCam2.Location = new System.Drawing.Point(199, 48);
             this.labelFramesCam2.Name = "labelFramesCam2";
-            this.labelFramesCam2.Size = new System.Drawing.Size(190, 51);
+            this.labelFramesCam2.Size = new System.Drawing.Size(238, 64);
             this.labelFramesCam2.TabIndex = 30;
             this.labelFramesCam2.Text = "0123456";
             // 
@@ -295,7 +295,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label10.Location = new System.Drawing.Point(204, 13);
+            this.label10.Location = new System.Drawing.Point(201, 13);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 26);
             this.label10.TabIndex = 29;
