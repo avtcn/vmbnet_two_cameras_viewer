@@ -41,7 +41,7 @@ namespace CameraViewer1
         {
             foreach (Camera camera in cameras)
             {
-                if (camera.Name.Contains(pattern))
+                if (camera.Model.Contains(pattern))
                 {
                     return camera.Id;
                 }
@@ -57,12 +57,17 @@ namespace CameraViewer1
 
         private void Init_Camera()
         {
-           
+            foreach (Camera camera in cameras)
+            {
+                System.Diagnostics.Trace.WriteLine("Found one camera: " + camera.Model);
+            }
+
             try
             {
                 Camera1 = new AVT_Cam();
                 //Camera1.m_Cam  = m_Vimba.GetCameraByID("192.168.4.66");//两种方式都可以
-                Camera1.m_Cam  = m_Vimba.GetCameraByID(GetCameraId("Mako"));
+                // TODO: Joe: change to Alvium 1800U500c in mono mode
+                Camera1.m_Cam  = m_Vimba.GetCameraByID(GetCameraId("Mako G"));
                 //Camera1.m_Cam = m_Vimba.GetCameraByID("DEV_000F31F4298E") ;           
                 bT_OpenCamera.Enabled = true;                            
             }
@@ -76,7 +81,7 @@ namespace CameraViewer1
             {
                 Camera2 = new AVT_Cam();
                 //Camera2.m_Cam = m_Vimba.GetCameraByID("192.168.0.12");
-                Camera2.m_Cam  = m_Vimba.GetCameraByID(GetCameraId("Guppy"));
+                Camera2.m_Cam  = m_Vimba.GetCameraByID(GetCameraId("Mako U"));
                 //Camera2.m_Cam = m_Vimba.GetCameraByID("DEV_000F314D5B52");
                 bT_OpenCamera2.Enabled = true;                             
             }
