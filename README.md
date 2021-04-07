@@ -1,6 +1,8 @@
-vmbnet_two_cameras_viewer: Vimba .NET/C# SDK sample for two cameras in free run mode
+Vimba .NET/C# SDK sample for two cameras in free run mode
 ---
 ## Vimba SDK sample with two cameras in free run mode.
+
+同时运行两个相机
 
 ![](screenshot-av1800-vs-mako.png)
 
